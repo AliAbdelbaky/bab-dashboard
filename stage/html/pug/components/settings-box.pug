@@ -1,0 +1,21 @@
+.settings-box
+    .toggle-settings
+        i.fas.fa-cog
+    .settings-content.text-center
+        .option-box.color-option
+            //- color option
+            h4.option-title Color Options
+            -var themes =["midnight-theme","green-theme","red-theme","orange-theme","purple-theme","yellow-theme"]
+            ul.list-unstyled
+                each theme in themes
+                    li(data-theme=theme)
+        //-font option
+        .option-box.font-options
+            h4.option-title Font Options
+            -var fonts=["noto","roboto","lobster","marker","start","metal"]
+            select(value='').form-control
+                each font in fonts
+                    option(value=font)=font +' Font'
+        //-slidbar option
+        .option-box.slidebar-options
+            h4.option-title Slidebar Options 

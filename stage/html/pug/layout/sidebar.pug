@@ -1,0 +1,20 @@
+.sidebar
+    .logo-area.text-center Ali Abdelbaky
+    ul.links-area.list-unstyled
+        li: a(href="index.html" class=pageTitle==='Homepage'?'active':'') Homepage
+        li
+            a.toggle-submenu(href="#") Forms 
+                i(class="fas fa-angle-right")
+            ul.child-links.list-unstyled
+                li: a(href="#") Input
+                li: a(href="#") Textarea
+                li: a(href="#") Checkbox
+                li: a(href="#") Radio
+        li
+            a.toggle-submenu(href="#")
+                | Mist
+                i(class="fas fa-angle-right")
+            ul.child-links.list-unstyled
+                li: a(href="#") Loading
+                li: a(href="#") Breadcrumbs
+        li: a(href="chart.html" class= pageTitle==='Chart'?'active':'') Chart

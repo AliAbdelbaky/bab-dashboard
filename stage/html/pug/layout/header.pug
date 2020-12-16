@@ -1,0 +1,54 @@
+.header
+    //-sidebar Toggler
+    i(class="fas fa-exchange-alt toggle-sidebar")
+    //-Notifications Container
+    .dropdown-notify-container
+        i.fa.fa-bell#notify( data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        .dropdown-menu(aria-labelledy='notify')
+            .noti-head
+                | Notifications 
+                span 50
+            .noti-content
+                ul.list-unstyled
+                    li
+                        i.far.fa-envelope.red 
+                        | You Got E-Mail from Ali Abdelbaky
+                    li
+                        i.far.fa-thumbs-up.blue 
+                        | You Got Like from Ali Abdelbaky
+                    li
+                        i.fab.fa-twitter.blue 
+                        | You Got Massege from Ali Abdelbaky
+            .noti-foot.text-center
+                a(href="") View All Notifications
+        i.fas.fa-expand.toggle-screen
+        //- Usermenu
+    .dropdown-usermenu-container
+        .username#usermenu( data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            img.avatar.rounded-circle(src="img/Abdelbaky.jpg" alt="")
+            span.user Ali Abdelbaky
+            i.fa.fa-angle-down
+        .dropdown-menu.dropdown-menu-right(aria-labelledy='usermenu')
+            .user-info
+                h3 Ali Abdelbaky
+                p Premuim Member
+            hr
+            ul.activities-list.list-unstyled
+                li Added Comment On Post "You Deserve Happiness, Love, And Success"
+                li Created Post On Category "Computer Science"
+                li Created Chart on Chart Page
+                li Added Comment on Post " How To make Dashboard"
+            hr
+            .row.user-settings
+                .col
+                    .link-box
+                        i.fas.fa-cog 
+                        span Settings
+                .col
+                    .link-box 
+                        i.fas.fa-user 
+                        span My Profile
+                .col    
+                    .link-box 
+                        i.fas.fa-power-off 
+                        span Logout

@@ -1,0 +1,27 @@
+$themes: (midnight-theme: (color: #2c3e50), green-theme: (color: #16a085), red-theme: (color: #c0392b), orange-theme: (color: #d35400), purple-theme: (color: #8e44ad), yellow-theme: (color: #e1b12c))
+
+@each $theme, $map in $themes
+  $pagetheme: map-get($map, color) !important
+  .#{$theme}
+    .content
+      .page-head
+        .page-title
+          color: $pagetheme
+  .#{$theme}
+    .page
+      .sidebar
+        .links-area
+          .child-links
+            a:hover:before
+              background-color: $pagetheme
+  .#{$theme}
+    .content-area .header .toggle-sidebar:hover
+      color: $pagetheme
+    .content-area .header .dropdown-notify-container #notify:hover
+      color: $pagetheme
+    .content-area .header .dropdown-notify-container .toggle-screen:hover
+      color: $pagetheme
+    .content-area .header .dropdown-usermenu-container .dropdown-menu .user-info h3
+      color: $pagetheme
+    .page .sidebar .links-area>li>a.active::before
+      border: 2px solid $pagetheme

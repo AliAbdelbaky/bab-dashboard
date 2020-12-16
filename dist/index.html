@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , shrink-to-fit=no"/>
+    <link rel="icon" href="img/logo.png"/>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&amp;family=Metal+Mania&amp;family=Noto+Sans+SC&amp;family=Permanent+Marker&amp;family=Press+Start+2P&amp;family=Roboto:wght@300&amp;display=swap"/>
+  </head>
+  <body>
+    <div class="page home-page">
+      <div class="settings-box">
+        <div class="toggle-settings"><i class="fas fa-cog"></i></div>
+        <div class="settings-content text-center">
+          <div class="option-box color-option">
+            <h4 class="option-title">Color Options</h4>
+            <ul class="list-unstyled">
+              <li data-theme="midnight-theme"></li>
+              <li data-theme="green-theme"></li>
+              <li data-theme="red-theme"></li>
+              <li data-theme="orange-theme"></li>
+              <li data-theme="purple-theme"></li>
+              <li data-theme="yellow-theme"></li>
+            </ul>
+          </div>
+          <div class="option-box font-options">
+            <h4 class="option-title">Font Options</h4>
+            <select class="form-control" value="">
+              <option value="noto">noto Font</option>
+              <option value="roboto">roboto Font</option>
+              <option value="lobster">lobster Font</option>
+              <option value="marker">marker Font</option>
+              <option value="start">start Font</option>
+              <option value="metal">metal Font</option>
+            </select>
+          </div>
+          <div class="option-box slidebar-options">
+            <h4 class="option-title">Slidebar Options </h4>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="logo-area text-center">Ali Abdelbaky</div>
+        <ul class="links-area list-unstyled">
+          <li><a class="active" href="index.html">Homepage</a></li>
+          <li><a class="toggle-submenu" href="#">Forms <i class="fas fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">Input</a></li>
+              <li><a href="#">Textarea</a></li>
+              <li><a href="#">Checkbox</a></li>
+              <li><a href="#">Radio</a></li>
+            </ul>
+          </li>
+          <li><a class="toggle-submenu" href="#">Mist<i class="fas fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">Loading</a></li>
+              <li><a href="#">Breadcrumbs</a></li>
+            </ul>
+          </li>
+          <li><a href="chart.html">Chart</a></li>
+        </ul>
+      </div>
+      <div class="content-area">
+        <div class="header"><i class="fas fa-exchange-alt toggle-sidebar"></i>
+          <div class="dropdown-notify-container"><i class="fa fa-bell" id="notify" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledy="notify">
+              <div class="noti-head">Notifications <span>50</span></div>
+              <div class="noti-content">
+                <ul class="list-unstyled">
+                  <li><i class="far fa-envelope red"> </i>You Got E-Mail from Ali Abdelbaky</li>
+                  <li><i class="far fa-thumbs-up blue"> </i>You Got Like from Ali Abdelbaky</li>
+                  <li><i class="fab fa-twitter blue"> </i>You Got Massege from Ali Abdelbaky</li>
+                </ul>
+              </div>
+              <div class="noti-foot text-center"><a href="">View All Notifications</a></div>
+            </div><i class="fas fa-expand toggle-screen"></i>
+          </div>
+          <div class="dropdown-usermenu-container">
+            <div class="username" id="usermenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar rounded-circle" src="img/Abdelbaky.jpg" alt=""/><span class="user">Ali Abdelbaky</span><i class="fa fa-angle-down"></i></div>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledy="usermenu">
+              <div class="user-info">
+                <h3>Ali Abdelbaky</h3>
+                <p>Premuim Member</p>
+              </div>
+              <hr/>
+              <ul class="activities-list list-unstyled">
+                <li>Added Comment On Post "You Deserve Happiness, Love, And Success"</li>
+                <li>Created Post On Category "Computer Science"</li>
+                <li>Created Chart on Chart Page</li>
+                <li>Added Comment on Post " How To make Dashboard"</li>
+              </ul>
+              <hr/>
+              <div class="row user-settings">
+                <div class="col">
+                  <div class="link-box"><i class="fas fa-cog"> </i><span>Settings</span></div>
+                </div>
+                <div class="col">
+                  <div class="link-box"> <i class="fas fa-user"> </i><span>My Profile</span></div>
+                </div>
+                <div class="col">   
+                  <div class="link-box"> <i class="fas fa-power-off"> </i><span>Logout</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="content">
+            <div class="page-head">
+              <h1 class="page-title">Homepage</h1>
+              <p class="page-dic lead">This Is Discreption Of Homepage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

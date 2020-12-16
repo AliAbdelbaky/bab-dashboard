@@ -1,0 +1,22 @@
+-var pageTitle ="Homepage"
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include pug/layout/meta
+        include pug/layout/styles
+    body
+        .page.home-page
+            //-Settingbox
+            include pug/components/settings-box
+            //-Sidebar
+            include pug/layout/sidebar
+            //-Content-area
+            .content-area
+                //- Header
+                include pug/layout/header
+                //- Content
+                .container-fluid
+                    .content
+                        include pug/components/page-head
+        //-scripts
+        include pug/layout/scripts  

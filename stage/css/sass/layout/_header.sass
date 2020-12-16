@@ -1,0 +1,162 @@
+body
+    .content-area
+        .header
+            background-color: $header-bg
+            padding: 1rem
+            .toggle-sidebar
+                cursor: pointer
+                font-size: 17px
+                @include transition-sidebar
+                &.rotated-sidbar
+                    transform: rotate(180deg)
+                &:hover
+                    color: #2c3e50
+            .dropdown-notify-container
+                display: inline-block
+                margin-left: 5px
+                #notify
+                    background-color: #eeeeee
+                    padding: .4rem
+                    border-radius: 50%
+                    color: #555
+                    font-size: 1.1rem
+                    cursor: pointer
+                    @include transition
+                    &.rotated-bell
+                        animation: rotatebell .3s ease-in-out
+                    &:hover
+                        color: #2c3e50
+                .dropdown-menu
+                    min-width: 500px
+                    border: none
+                    box-shadow: 0 0 10px #DDD
+                    transform: translate3d(41.5px, 58px, 0px) !important
+                    padding: 0px !important
+                    &::before
+                        content: ""
+                        position: absolute
+                        top: -19px
+                        left: 4px
+                        border: 10px solid
+                        border-color: transparent transparent #333333 transparent
+                    .noti-head
+                        background-color: #333333
+                        padding: 15px
+                        color: #ffffff
+                        span
+                            float: right
+                    .noti-content
+                        ul
+                            margin: 0px
+                            li
+                                padding: 20px 20px  15px
+                                border-bottom: 1px solid #EEE
+                                cursor: pointer
+                                @include transition
+                                &:hover
+                                    background-color: #eee
+                                i
+                                    font-size: 1rem
+                                    background-color: #eee
+                                    padding: .4rem
+                                    border-radius: 50%
+                                    margin-right: 5px
+                                .red
+                                    color: #c0392b
+                                .blue
+                                    color: #2980b9
+                                .blue
+                                    color: #2980b9
+                    .noti-foot
+                        a
+                            display: block
+                            padding: 15px
+                            text-decoration: none
+                .toggle-screen
+                    font-size: 1.5rem
+                    position: relative
+                    top: 3px
+                    margin-left: 10px
+                    cursor: pointer
+                    @include transition
+                    &:hover
+                        color: #2c3e50
+            .dropdown-usermenu-container
+                display: inline-block
+                margin-left: 5px
+                float: right
+                color: #777
+                &:focus
+                    color: #000
+                .username
+                    font-size: 1rem
+                    .avatar
+                        width: 2rem
+                        height: 2rem
+                        margin-right: 5px
+                        position: relative
+                        bottom: 2px
+                    .user
+                        padding-right: 5px
+                        cursor: pointer
+                    i
+                        position: relative
+                        top: 1px
+                .dropdown-menu
+                    min-width: 500px
+                    border: none
+                    transform: translate3d(683px, 54px, 0px) !important
+                    padding: 20px !important
+                    border: 1px solid #DDD
+                    &::before
+                        content: ""
+                        position: absolute
+                        right: 1.2rem
+                        top: -21px
+                        border: 10px solid
+                        border-color: transparent transparent #DDD transparent
+                    .user-info
+                        h3
+                            font-weight: bold
+                            color: #2c3e50
+                        p
+                            color: #888
+                    .activities-list
+                        li
+                            padding: 10px 10px 10px 14px
+                            margin-left: 5px
+                            position: relative
+                            &::before
+                                content: ""
+                                position: absolute
+                                top: 18px
+                                left: 0px
+                                width: 10px
+                                height: 10px
+                                border-radius: 50%
+                                border: 3px solid #888
+                    .user-settings
+                        .link-box
+                            background-color: #ffffff
+                            border: 1px solid  #f3f3f3f3
+                            padding: 6px
+                            text-align: right
+                            border-radius: 10px
+                            cursor: pointer
+                            @include transition
+                            &:hover
+                                box-shadow: 0px 0px 2px 1px #e8e8e8
+                            i
+                                font-size: 1rem
+                                margin-right: 10px
+                                float: left
+                                position: relative
+                                top: 4px
+                                &.fa-cog
+                                    color: #2980b9
+                                &.fa-user
+                                    color: #1abc9c
+                                &.fa-power-off
+                                    color: #c0392b
+                            span
+                                font-size: 1rem

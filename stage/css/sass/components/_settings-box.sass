@@ -1,0 +1,63 @@
+.settings-box
+    position: fixed
+    right: 0px
+    top: 0px
+    right: -250px
+    width: 250px
+    height: 100%
+    background-color: #fff
+    z-index: 1000
+    padding: 20px
+    @include transition-sidebar
+    .toggle-settings
+        position: absolute
+        left: -37.5px
+        top: 104px
+        padding: 6px 9px
+        font-size: 1.2rem
+        cursor: pointer
+        color: #3498db
+        background-color: #fff
+        border-radius: 7px 0px 0px 7px
+        @include transition-sidebar
+        &.rotate-settings-btn
+            background-color: #f2f1f6
+            border: 1px solid #e4e3e8
+            border-right: none
+            color: #2980b9
+    &.show-settings
+        right: 0px
+        box-shadow: 0px 0px 12px 2px #2c3e50
+    //-Color Options
+    .settings-content
+        .color-option
+            ul
+                background-color: #f2f1f6
+                padding: 5px
+                border-radius: 7px
+                $colors: #2c3e50, #16a085, #c0392b, #d35400, #8e44ad, #e1b12c
+                @for $c from 1 to 7
+                    li:nth-child(#{$c})
+                        background-color: nth($colors, $c)
+                        width: 1.5rem
+                        height: 1.5rem
+                        border-radius: 50%
+                        display: inline-block
+                        cursor: pointer
+                        opacity: 0.7
+                        position: relative
+                        top: 2px
+                        @include transition
+                        &.active
+                            opacity: 1
+        .option-box
+            margin-bottom: 15px
+            border-bottom: 1px solid #eee
+            .option-title
+                letter-spacing: 2px
+                font-weight: bold
+                font-size: 1rem
+        .font-options
+            .form-control
+                text-transform: capitalize
+                margin-bottom: 15px

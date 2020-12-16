@@ -1,0 +1,33 @@
+*
+    box-sizing: border-box
+body
+    &.noto
+        font-family: 'Noto Sans SC', sans-serif
+    &.roboto
+        font-family: 'Roboto', sans-serif
+    &.lobster
+        font-family: 'Lobster', cursive
+    &.marker
+        font-family: 'Permanent Marker', cursive
+    &.start
+        font-family: 'Press Start 2P', cursive
+    &.metal
+        font-family: 'Metal Mania', cursive
+    .page
+        min-height: 100vh
+    .content-area
+        position: fixed
+        top: 0
+        right: 0
+        width: calc(100% - 250px)
+        min-height: 100%
+        will-change: width
+        background-color: $contentarea-bg
+        @include transition-sidebar
+        &.no-sidebar
+            width: 100%
+        .content
+            .page-head
+                .page-title
+                    font-weight: bold
+                    color: #2c3e50
